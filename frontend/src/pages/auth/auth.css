@@ -1,0 +1,150 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f6f1e8;
+
+  font-family: Georgia, "Times New Roman", serif;
+  padding: 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+
+  background: #fffdf8;
+
+  padding: 45px 40px;
+
+  border: 1px solid #e5ded1;
+  border-radius: 14px;
+
+  box-shadow: 0 15px 40px rgba(70, 55, 35, 0.08);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.auth-header h1 {
+  margin: 0;
+
+  font-size: 42px;
+  font-weight: 500;
+
+  color: #342d27;
+}
+
+.auth-header p {
+  margin-top: 10px;
+
+  color: #81766b;
+  font-size: 15px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #51473e;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 13px 14px;
+
+  border: 1px solid #dcd3c7;
+  border-radius: 8px;
+
+  background: #fffefa;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  outline: none;
+
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #8c7763;
+
+  box-shadow: 0 0 0 3px rgba(140, 119, 99, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #aaa098;
+}
+
+.auth-button {
+  margin-top: 8px;
+
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #514238;
+  color: white;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.auth-button:hover {
+  background: #3f342d;
+}
+
+.auth-button:active {
+  transform: scale(0.99);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.auth-footer p {
+  color: #81766b;
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: #514238;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .auth-card {
+    padding: 35px 25px;
+  }
+
+  .auth-header h1 {
+    font-size: 36px;
+  }
+}

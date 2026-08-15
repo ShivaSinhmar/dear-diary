@@ -10,7 +10,12 @@ const Home = () => {
   useEffect(() => {
     const loadDiary = async () => {
         try {
-            const response = await fetch("http://localhost:3001/api/diary/loadDiary");
+            const response = await fetch(
+              "http://localhost:3001/api/diary/loadDiary",
+              {
+                credentials: "include"
+              }
+             );
 
             const result = await response.json();
 
@@ -35,6 +40,8 @@ const Home = () => {
             headers: {
                 "Content-Type": "application/json",
             },
+            credentials: "include",
+
             body: JSON.stringify({
                 thought: thought,
         }),
